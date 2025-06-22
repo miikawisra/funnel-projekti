@@ -1,0 +1,81 @@
+body {
+  margin: 0;
+  background-color: rgba(96, 186, 207, 0.299);
+}
+
+.banner {
+
+  margin: 0%;
+  position: relative;
+  width: 100%;
+  height: 400px;
+  overflow: hidden;
+  border-bottom: 1px solid black;
+}
+
+.banner-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+
+}
+
+
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  /* läpikuultava musta */
+  z-index: 1;
+  /* Nostetaan kuvan päälle */
+}
+
+.banner-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  /* vaihda valkoiseksi että näkyy tumman taustan päällä */
+  text-align: center;
+  z-index: 2;
+  /* Nostetaan overlayn päälle */
+}
+
+input[type="email"] {
+  padding: 10px 15px;
+  /* Pehmennys kentän sisällä */
+  border-radius: 8px;
+  /* Pyöristetyt kulmat */
+  border: none;
+  /* Poistaa oletusreunan */
+  outline: none;
+  /* Poistaa sinisen korostuksen klikatessa */
+  font-size: 16px;
+  width: 250px;
+}
+
+button[type="submit"] {
+  padding: 10px 20px;
+  border-radius: 8px;
+  border: solid black 1px;
+  background-color: #00bfffa1;
+  /* Kirkas taustaväri */
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+  background-color: #0099cc;
+}
+
+form input,
+form button {
+  margin: 8px;
+}

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+
+<body>
+
+    <div class="banner">
+        <img src="/media/pexels-goumbik-590037.jpg" alt="Banneri" class="banner-image" />
+        <div class="overlay"></div>
+        <div class="banner-content">
+            <h1>Download The Funnel Builder Handbook!</h1>
+            <h3>How to build your own funnel without using expensive apps</h3>
+            <form id="newsletter-form">
+                <input type="email" id="email" placeholder="Email" required>
+                <button type="submit">Give me the damn Handbook!</button>
+            </form>
+            <p id="response"></p>
+        </div>
+    </div>
+
+    <div class="features">
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+    <div class="footer"></div>
+
+<script src="{{ url_for('static', filename='script.js') }}"></script>
+
+
+</body>
+
+</html>
