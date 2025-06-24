@@ -19,7 +19,13 @@ PASSWORD = os.getenv("EMAIL_PASS")
 
 def send_welcome_email(to_email):
     subject = "Tervetuloa uutiskirjeeseen!"
-    body = "Kiitos liittymisestä. Tästä alkaa matkamme!"
+    body = body = """Hei ja kiitos liittymisestä uutiskirjeeseen!
+
+    Voit ladata tervetulopaketin PDF-muodossa täältä:
+    https://funnel-projekti.onrender.com/static/Funnel.pdf
+
+    Terveisin,
+    Funnel-tiimi"""
 
     msg = MIMEText(body)
     msg["Subject"] = subject
